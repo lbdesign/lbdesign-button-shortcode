@@ -8,7 +8,11 @@
 */
 
 function lbdesign_button($atts, $content = null) {
-   extract(shortcode_atts(array('link' => '#', 'color' => '', 'size' => ''), $atts));
+   $atts = shortcode_atts(array(
+		'link' => '#',
+		'color' => '',
+		'size' => ''
+   	), $atts));
    return '<a class="button ' . $color . ' ' . $size . '" href="'.$link.'"><span>' . do_shortcode($content) . '</span></a>';
 }
 add_shortcode('button', 'lbdesign_button');
