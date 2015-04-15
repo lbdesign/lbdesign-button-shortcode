@@ -1,0 +1,44 @@
+/* DEFAULT button shortcode styles */
+a.button {
+    background: #ccc;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 20px 25px;
+    display: inline-block;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    border: 0;
+
+    &:hover,
+    &:focus {
+        background: #999999;
+    }
+
+    /* SIZE button styles */
+    &.small {
+        padding: 10px 15px;
+        font-size: 0.9em;
+    }
+    &.large {
+        padding: 30px 35px;
+        font-size: 1.2em;
+    }
+
+    /* COLOR button styles */
+    &.primary {
+        background: #004099;
+        &:hover,
+        &:focus {
+            background: #00265a;
+        }
+    }
+    &.alternate {
+        background: #044c37;
+        &:hover,
+        &:focus {
+            background: #06805b
+        }
+    }
+    
+}

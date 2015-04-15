@@ -1,0 +1,31 @@
+/* DEFAULT button shortcode styles */
+a.button {
+  background: #ccc;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 20px 25px;
+  display: inline-block;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  border: 0;
+  /* SIZE button styles */
+  /* COLOR button styles */ }
+  a.button:hover, a.button:focus {
+    background: #999999; }
+  a.button.small {
+    padding: 10px 15px;
+    font-size: 0.9em; }
+  a.button.large {
+    padding: 30px 35px;
+    font-size: 1.2em; }
+  a.button.primary {
+    background: #004099; }
+    a.button.primary:hover, a.button.primary:focus {
+      background: #00265a; }
+  a.button.alternate {
+    background: #044c37; }
+    a.button.alternate:hover, a.button.alternate:focus {
+      background: #06805b; }
+
+/*# sourceMappingURL=style.css.map */
