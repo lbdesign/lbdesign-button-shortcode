@@ -27,7 +27,6 @@
                                 {text: 'Default', value: 'default'},
                                 {text: 'Primary', value: 'primary'},
                                 {text: 'Action', value: 'action'},
-                                {text: 'Highlight', value: 'highlight'},
                                 {text: 'Warning', value: 'warning'},
                                 {text: 'Info', value: 'info'}
                             ]
@@ -88,7 +87,11 @@
                 longname : 'LBDesign Button Shortcode',
                 author : 'Lauren Pittenger @ LBDesign',
                 authorurl : 'http://lbdesign.tv',
+<<<<<<< bdbecb7874ddd861c8eac12cf604da212f5ae2c9
                 version : "1.0"
+=======
+                version : "0.1"
+>>>>>>> Added popup window with inputs for tinymce
             };
         }
     });
