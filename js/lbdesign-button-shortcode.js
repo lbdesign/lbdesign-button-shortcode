@@ -15,15 +15,37 @@
                 image : 'http://placehold.it/20x20'
             });
             ed.addCommand('buttonshortcode', function() {
-                var content = prompt("Content, please"),
-                shortcode;
-                var color = prompt("What color button?");
-                if (color !== null && content !== null) {
-                    content = String(content);
-                    color = String(color);
-                    shortcode = '[button color="' + color + '"]' + content + '[/button]';
-                    ed.execCommand('mceInsertContent', 0, shortcode);
-                }
+                ed.windowManager.open({
+                    title : 'Insert a Button',
+                    body: [
+                        {type: 'textbox', name: 'link', label: 'Link'},
+                        {type: 'textbox', name: 'content', label: 'Button Text' },
+                        {type: 'listbox',
+                            name: 'type',
+                            label: 'Type',
+                            'values': [
+                                {text: 'Default', value: 'default'},
+                                {text: 'Primary', value: 'primary'},
+                                {text: 'Action', value: 'action'},
+                                {text: 'Warning', value: 'warning'},
+                                {text: 'Info', value: 'info'}
+                            ]
+                        },
+                        {type: 'listbox',
+                            name: 'size',
+                            label: 'Size',
+                            'values': [
+                                {text: 'Default', value: 'default'},
+                                {text: 'Small', value: 'small'},
+                                {text: 'Large', value: 'large'}
+                            ]
+                        }
+                    ],
+                    onsubmit: function(e) {
+                        ed.focus();
+                        ed.selection.setContent('[button link="' + e.data.link +'" type="' + e.data.type + '" size="' + e.data.size + '"]' + e.data.content + '[/button]');
+                    }
+                });
             });
         },
 
@@ -50,9 +72,8 @@
         getInfo : function() {
             return {
                 longname : 'LBDesign Button Shortcode',
-                author : 'Lee',
-                authorurl : 'http://wp.tutsplus.com/author/leepham',
-                infourl : 'http://wiki.moxiecode.com/index.php/TinyMCE:Plugins/example',
+                author : 'Lauren Pittenger @ LBDesign',
+                authorurl : 'http://lbdesign.tv',
                 version : "0.1"
             };
         }
