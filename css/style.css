@@ -7,12 +7,12 @@ a.button {
   padding: 20px 25px;
   display: inline-block;
   text-transform: uppercase;
-  margin-bottom: 20px;
+  margin: 5px 5px 5px 0;
   border: 0;
   /* SIZE button styles */
-  /* COLOR button styles */ }
+  /* TYPE button styles */ }
   a.button:hover, a.button:focus {
-    background: #999999; }
+    background: #b3b3b3; }
   a.button.small {
     padding: 10px 15px;
     font-size: 0.9em; }
@@ -20,12 +20,20 @@ a.button {
     padding: 30px 35px;
     font-size: 1.2em; }
   a.button.primary {
-    background: #004099; }
+    background: #226CFF; }
     a.button.primary:hover, a.button.primary:focus {
-      background: #00265a; }
-  a.button.alternate {
-    background: #044c37; }
-    a.button.alternate:hover, a.button.alternate:focus {
-      background: #06805b; }
+      background: #0050ee; }
+  a.button.warning {
+    background: #FF2247; }
+    a.button.warning:hover, a.button.warning:focus {
+      background: #ee0028; }
+  a.button.info {
+    background: #FFDA22; }
+    a.button.info:hover, a.button.info:focus {
+      background: #eec600; }
+  a.button.action {
+    background: #4FBE00; }
+    a.button.action:hover, a.button.action:focus {
+      background: #3a8b00; }
 
 /*# sourceMappingURL=style.css.map */
