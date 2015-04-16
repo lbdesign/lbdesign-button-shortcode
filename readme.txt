@@ -1,35 +1,52 @@
- how to use:
+ === LBDesign Button Shortcode ===
+ Contributors: lepittenger
+ Tags: shortcode
+ Requires at least: 3.0.1
+ Tested up to: 4.0.1
+ Stable tag: 4.3
+ License: GPLv2 or later
+ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
- [button link="http://something.com" color="red" size="big"]Call to Action![/button]
+ A simple plugin for adding call-to-action buttons to post & page content via a shortcode.
 
-How to style (can also be found in LBD Client Theme):
+ == Description ==
 
- /* DEFAULT button shortcode styles */
-a.button {
-	background: $color_buttons; /* Old browsers */
-	color: #fff !important;
-	text-decoration: none;
-	font-weight: bold;
-	padding: 15px 20px;
-	display: inline-block;
-	text-transform: uppercase;
-	margin-bottom: 20px;
-	border: 0;
-}
-a.button:hover,
-a.button:focus {
-	background: $color_buttons_hover; /* Old browsers */
-}
-/* COLOR button styles */
-a.button.orange {
-	background: $color_buttons_alt; /* Old browsers */
-}
-a.button.orange:hover,
-a.button.orange:focus {
-	background: $color_buttons_alt_hover;
-}
-/* SIZE button styles */
-a.button.big {
-	padding: 25px 20px;
-	font-size: 1.2em;
-}
+ This simple plugin allows you to add call-to-action buttons to post and page content via a shortcode.
+
+ There are five styles included:
+ * Default
+ * Primary
+ * Action
+ * Info
+ * Warning
+
+ There are three sizes:
+ * Default (medium)
+ * Small
+ * Large
+
+ == Installation ==
+
+ This section describes how to install the plugin and get it working.
+
+ e.g.
+
+ 1. Upload `lbdesign-button-shortcode` to the `/wp-content/plugins/` directory
+ 2. Activate the plugin through the 'Plugins' menu in WordPress
+ 3. Add buttons to post and page content using the insert button on the WordPress editor
+
+ == Frequently Asked Questions ==
+
+ None yet.
+
+ == Screenshots ==
+
+ 1. This screen shot description corresponds to screenshot-1.(png|jpg|jpeg|gif). Note that the screenshot is taken from
+ the /assets directory or the directory that contains the stable readme.txt (tags or trunk). Screenshots in the /assets
+ directory take precedence. For example, `/assets/screenshot-1.png` would win over `/tags/4.3/screenshot-1.png`
+ (or jpg, jpeg, gif).
+ 2. This is the second screen shot
+
+ == Changelog ==
+
+ == Upgrade Notice ==
