@@ -11,10 +11,11 @@
 function lbdesign_button($atts, $content = null) {
    $atts = shortcode_atts(array(
 		'link' => '#',
-		'color' => 'primary',
+		'type' => 'default',
+        'color' => '',
 		'size' => 'default'
     ), $atts, 'lbdesign_button');
-   return '<a class="button ' . $atts['color'] . ' ' . $atts['size'] . '" href="'.$atts['link'].'">' . do_shortcode($content) . '</a>';
+   return '<a class="button ' . $atts['type'] . ' ' . $atts['color'] . ' ' . $atts['size'] . '" href="'.$atts['link'].'">' . do_shortcode($content) . '</a>';
 }
 add_shortcode('button', 'lbdesign_button');
 
