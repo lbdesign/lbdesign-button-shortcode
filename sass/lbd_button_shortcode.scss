@@ -7,12 +7,12 @@ a.button {
     padding: 20px 25px;
     display: inline-block;
     text-transform: uppercase;
-    margin-bottom: 20px;
+    margin: 5px 5px 5px 0;
     border: 0;
 
     &:hover,
     &:focus {
-        background: #999999;
+        background: darken(#ccc, 10%);
     }
 
     /* SIZE button styles */
@@ -25,20 +25,34 @@ a.button {
         font-size: 1.2em;
     }
 
-    /* COLOR button styles */
+    /* TYPE button styles */
     &.primary {
-        background: #004099;
+        background: #226CFF;
         &:hover,
         &:focus {
-            background: #00265a;
+            background: darken(#226CFF, 10%);
         }
     }
-    &.alternate {
-        background: #044c37;
+    &.warning {
+        background: #FF2247;
         &:hover,
         &:focus {
-            background: #06805b
+            background: darken(#FF2247, 10%);
         }
     }
-    
+    &.info {
+        background: #FFDA22;
+        &:hover,
+        &:focus {
+            background: darken(#FFDA22, 10%);
+        }
+    }
+    &.action {
+        background: #4FBE00;
+        &:hover,
+        &:focus {
+            background: darken(#4FBE00, 10%);
+        }
+    }
+
 }
