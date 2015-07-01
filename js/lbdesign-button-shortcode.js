@@ -24,11 +24,11 @@
                             name: 'type',
                             label: 'Button Type',
                             'values': [
-                                {text: 'Default', value: 'default'},
-                                {text: 'Primary', value: 'primary'},
-                                {text: 'Action', value: 'action'},
-                                {text: 'Warning', value: 'warning'},
-                                {text: 'Info', value: 'info'}
+                                {text: 'Default', value: 'lbdesign_type_default'},
+                                {text: 'Primary', value: 'lbdesign_primary'},
+                                {text: 'Action', value: 'lbdesign_action'},
+                                {text: 'Warning', value: 'lbdesign_warning'},
+                                {text: 'Info', value: 'lbdesign_info'}
                             ]
                         },
                         {type: 'listbox',
