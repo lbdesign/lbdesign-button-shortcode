@@ -11,11 +11,21 @@
 function lbdesign_button($atts, $content = null) {
    $atts = shortcode_atts(array(
 		'link' => '#',
-		'type' => 'default',
+		'type' => 'lbdesign_type_default',
         'color' => '',
-		'size' => 'default'
+		'size' => 'lbdesign_size_default',
+        'custom_class' => '',
+        'full_width' => '',
     ), $atts, 'lbdesign_button');
-   return '<a class="button ' . $atts['type'] . ' ' . $atts['color'] . ' ' . $atts['size'] . '" href="'.$atts['link'].'">' . do_shortcode($content) . '</a>';
+
+    // check if we want the button to be full width. if yes, set up lbdesign_full_width class. if not, leave empty
+    if ($atts['full_width'] == "true" ) {
+        $full_width = 'lbdesign_full_width';
+    } else {
+        $full_width = '';
+    }
+
+   return '<a class="lbdesign_button ' . $atts['type'] . ' ' . $atts['color'] . ' ' . $atts['size'] . ' ' . $atts['custom_class'] . $full_width . '" href="'.$atts['link'].'">' . do_shortcode($content) . '</a>';
 }
 add_shortcode('button', 'lbdesign_button');
 

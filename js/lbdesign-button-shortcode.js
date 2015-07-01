@@ -22,28 +22,30 @@
                         {type: 'textbox', name: 'content', label: 'Button Text' },
                         {type: 'listbox',
                             name: 'type',
-                            label: 'Type',
+                            label: 'Button Type',
                             'values': [
-                                {text: 'Default', value: 'default'},
-                                {text: 'Primary', value: 'primary'},
-                                {text: 'Action', value: 'action'},
-                                {text: 'Warning', value: 'warning'},
-                                {text: 'Info', value: 'info'}
+                                {text: 'Default', value: 'lbdesign_type_default'},
+                                {text: 'Primary', value: 'lbdesign_primary'},
+                                {text: 'Action', value: 'lbdesign_action'},
+                                {text: 'Warning', value: 'lbdesign_warning'},
+                                {text: 'Info', value: 'lbdesign_info'}
                             ]
                         },
                         {type: 'listbox',
                             name: 'size',
-                            label: 'Size',
+                            label: 'Button Size',
                             'values': [
-                                {text: 'Default', value: 'default'},
-                                {text: 'Small', value: 'small'},
-                                {text: 'Large', value: 'large'}
+                                {text: 'Default', value: 'lbdesign_size_default'},
+                                {text: 'Small', value: 'lbdesign_small'},
+                                {text: 'Large', value: 'lbdesign_large'}
                             ]
-                        }
+                        },
+                        {type: 'textbox', name: 'custom_class', label: 'Custom Button Class'},
+                        {type: 'checkbox', name: 'full_width', label: 'Full Width?'},
                     ],
                     onsubmit: function(e) {
                         ed.focus();
-                        ed.selection.setContent('[button link="' + e.data.link +'" type="' + e.data.type + '" size="' + e.data.size + '"]' + e.data.content + '[/button]');
+                        ed.selection.setContent('[button link="' + e.data.link +'" type="' + e.data.type + '" custom_class="' + e.data.custom_class + '" size="' + e.data.size + '" full_width="'+e.data.full_width+'"]' + e.data.content + '[/button]');
                     }
                 });
             });
