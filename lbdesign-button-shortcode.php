@@ -35,7 +35,7 @@ add_shortcode('button', 'lbdesign_button');
 function lbdesign_button_styles() {
 
     /* default styles */
-    wp_register_style( 'lbdesign-button-shortcode', plugins_url() . '/lbdesign-button-shortcode/css/style.css');
+    wp_register_style( 'lbdesign-button-shortcode', plugins_url() . '/lbdesign-button-shortcode/css/lbdesign_button_shortcode.css');
     wp_enqueue_style( 'lbdesign-button-shortcode' );
 
 }
