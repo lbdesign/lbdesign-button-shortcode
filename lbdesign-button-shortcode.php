@@ -4,18 +4,18 @@
 * Description: A simple button shortcode
 * Author: Lauren Pittenger @ LBDesign
 * Version: 1.0
-* Last Updated: 2015-04-15
+* Last Updated: 2015-11-11
 */
 
 /* our main shortcode function */
 function lbdesign_button($atts, $content = null) {
    $atts = shortcode_atts(array(
-		'link' => '#',
-		'type' => 'lbdesign_type_default',
-        'color' => '',
-		'size' => 'lbdesign_size_default',
-        'custom_class' => '',
-        'full_width' => '',
+		'link' => null,
+		'type' => 'default',
+        'color' => 'default',
+		'size' => 'default',
+        'style' => 'default',
+        'custom_class' => null,
     ), $atts, 'lbdesign_button');
 
     // check if we want the button to be full width. if yes, set up lbdesign_full_width class. if not, leave empty
@@ -25,10 +25,16 @@ function lbdesign_button($atts, $content = null) {
         $full_width = '';
     }
 
-   return '<a class="lbdesign_button ' . $atts['type'] . ' ' . $atts['color'] . ' ' . $atts['size'] . ' ' . $atts['custom_class'] . $full_width . '" href="'.$atts['link'].'">' . do_shortcode($content) . '</a>';
+    foreach ($atts as $key => $att) {
+
+        if( $key !== 'link' && $att !== null && $att !== '' && $att !== 'default' ) {
+            $classes[] = 'lbdesign_'.$att;
+        }
+    }
+
+   return '<a class="lbdesign_button '.implode($classes, " ").' '.$full_width.'" href="'.$atts['link'].'">'.do_shortcode($content).'</a>';
 }
 add_shortcode('button', 'lbdesign_button');
-
 
 
 /* enqueue the default button styles */
