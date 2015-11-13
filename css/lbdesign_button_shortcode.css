@@ -1,44 +1,72 @@
 /* DEFAULT button shortcode styles */
-a.lbdesign_button {
-  background: #777;
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-  padding: 20px 25px;
+.lbdesign_button,
+.lbdesign_button:hover,
+.lbdesign_button:focus,
+.lbdesign_button:active,
+.lbdesign_button.active {
+  text-decoration: none; }
+
+.lbdesign_button {
+  padding: 0.625em 0.9375em;
   display: inline-block;
-  text-transform: uppercase;
-  margin: 5px 5px 5px 0;
-  border: 0;
-  line-height: 1.2;
-  /* SIZE button styles */
-  /* TYPE button styles */
-  /* FULL WIDTH BUTTON */ }
-  a.lbdesign_button:hover, a.lbdesign_button:focus {
+  background: #777;
+  color: white;
+  line-height: inherit;
+  border-bottom: none; }
+  .lbdesign_button:hover, .lbdesign_button:focus {
     background: #5e5e5e;
     color: #fff; }
-  a.lbdesign_button.lbdesign_small {
-    padding: 10px 15px;
-    font-size: 0.8em; }
-  a.lbdesign_button.lbdesign_large {
-    padding: 25px 30px;
-    font-size: 1.5em; }
-  a.lbdesign_button.lbdesign_primary {
-    background: #226CFF; }
-    a.lbdesign_button.lbdesign_primary:hover, a.lbdesign_button.lbdesign_primary:focus {
-      background: #0050ee; }
-  a.lbdesign_button.lbdesign_warning {
-    background: #FF2247; }
-    a.lbdesign_button.lbdesign_warning:hover, a.lbdesign_button.lbdesign_warning:focus {
-      background: #ee0028; }
-  a.lbdesign_button.lbdesign_info {
-    background: #FFDA22; }
-    a.lbdesign_button.lbdesign_info:hover, a.lbdesign_button.lbdesign_info:focus {
-      background: #eec600; }
-  a.lbdesign_button.lbdesign_action {
-    background: #4FBE00; }
-    a.lbdesign_button.lbdesign_action:hover, a.lbdesign_button.lbdesign_action:focus {
-      background: #3a8b00; }
-  a.lbdesign_button.lbdesign_full_width {
-    display: block;
-    width: 100%;
-    text-align: center; }
+
+/* SIZES */
+.lbdesign_small {
+  font-size: 85%; }
+
+.lbdesign_large {
+  font-size: 115%; }
+
+.lbdesign_xlarge {
+  font-size: 125%; }
+
+/* TYPES */
+.lbdesign_primary {
+  background: #226CFF; }
+  .lbdesign_primary:hover, .lbdesign_primary:focus {
+    background: #0050ee; }
+
+.lbdesign_warning {
+  background: #FF2247; }
+  .lbdesign_warning:hover, .lbdesign_warning:focus {
+    background: #ee0028; }
+
+.lbdesign_highlight {
+  background: #FFB624; }
+  .lbdesign_highlight:hover, .lbdesign_highlight:focus {
+    background: #f0a000; }
+
+.lbdesign_info {
+  background: #FFDA22; }
+  .lbdesign_info:hover, .lbdesign_info:focus {
+    background: #eec600; }
+
+.lbdesign_action {
+  background: #4FBE00; }
+  .lbdesign_action:hover, .lbdesign_action:focus {
+    background: #3a8b00; }
+
+/* STYLES */
+.lbdesign_rounded {
+  border-radius: 0.3125em; }
+
+.lbdesign_pill {
+  border-radius: 2em; }
+
+.lbdesign_block {
+  display: block;
+  text-align: center; }
+
+.lbdesign_full_width {
+  display: block;
+  width: 100%;
+  text-align: center; }
+
+/*# sourceMappingURL=lbdesign_button_shortcode.css.map */

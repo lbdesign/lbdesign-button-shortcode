@@ -13,11 +13,13 @@ $highlight: #FFB624;
 .lbdesign_button.active {
   text-decoration: none;
 }
-a.lbdesign_button {
+.lbdesign_button {
     padding: 0.625em 0.9375em;
     display: inline-block;
     background: #777;
     color: white;
+    line-height: inherit;
+    border-bottom: none;
 
     &:hover,
     &:focus {
