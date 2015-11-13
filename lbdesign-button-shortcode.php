@@ -3,8 +3,9 @@
 * Plugin Name: LBDesign Button Shortcode
 * Description: A simple button shortcode
 * Author: Lauren Pittenger @ LBDesign
+* Author URI: http://laurenpittenger.com
+* License: GPL
 * Version: 1.0
-* Last Updated: 2015-11-11
 */
 
 /* our main shortcode function */
