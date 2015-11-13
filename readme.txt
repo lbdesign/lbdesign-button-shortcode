@@ -13,17 +13,27 @@
 
  This simple plugin allows you to add call-to-action buttons to post and page content via a shortcode.
 
- There are five styles included:
+Five button types/colors included:
  * Default
  * Primary
  * Action
  * Info
  * Warning
 
- There are three sizes:
+ Three button sizes:
  * Default (medium)
  * Small
  * Large
+
+ Four styles:
+ * Default
+ * Rounded
+ * Pill
+ * Block
+
+ == Screenshots ==
+
+ 1. 
 
  == Installation ==
 
