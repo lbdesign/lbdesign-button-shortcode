@@ -59,7 +59,18 @@
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/lbdesign-button-shortcode.php",
+		"initialSize": 47460,
+		"inputAbbreviatedPath": "\/assets\/screenshot-1.png",
+		"outputAbbreviatedPath": "\/assets\/screenshot-1.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/css\/lbdesign_button_shortcode.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/css\/lbdesign_button_shortcode.css",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -107,7 +118,7 @@
 		"outputPathIsSetByUser": 0
 		},
 	"\/sass\/lbdesign_button_shortcode.scss": {
-		"createSourceMap": 0,
+		"createSourceMap": 1,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
