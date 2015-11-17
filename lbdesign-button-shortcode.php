@@ -11,27 +11,12 @@
 /* our main shortcode function */
 function lbdesign_button($atts, $content = null) {
    $atts = shortcode_atts(array(
-<<<<<<< 2db4346d677cd58e67000fec313b61777284bdc2
-<<<<<<< b96576ece5a9af761cf8a31ef8f8331b3f62ee71
-=======
->>>>>>> updated classes so 20 of the same classes don't get inserted into the button
 		'link' => null,
 		'type' => 'default',
         'color' => 'default',
 		'size' => 'default',
         'style' => 'default',
         'custom_class' => null,
-<<<<<<< 2db4346d677cd58e67000fec313b61777284bdc2
-=======
-		'link' => '#',
-		'type' => 'lbdesign_type_default',
-        'color' => '',
-		'size' => 'lbdesign_size_default',
-        'custom_class' => '',
-        'full_width' => '',
->>>>>>> Changed button classes to prevent conflicts with other themes, plugins etc. Changed labels of popup 'add button' window. Added custom button class and full width option to insert window
-=======
->>>>>>> updated classes so 20 of the same classes don't get inserted into the button
     ), $atts, 'lbdesign_button');
 
     // check if we want the button to be full width. if yes, set up lbdesign_full_width class. if not, leave empty
@@ -41,10 +26,6 @@ function lbdesign_button($atts, $content = null) {
         $full_width = '';
     }
 
-<<<<<<< 2db4346d677cd58e67000fec313b61777284bdc2
-<<<<<<< b96576ece5a9af761cf8a31ef8f8331b3f62ee71
-=======
->>>>>>> updated classes so 20 of the same classes don't get inserted into the button
     foreach ($atts as $key => $att) {
 
         if( $key !== 'link' && $att !== null && $att !== '' && $att !== 'default' ) {
@@ -53,12 +34,6 @@ function lbdesign_button($atts, $content = null) {
     }
 
    return '<a class="lbdesign_button '.implode($classes, " ").' '.$full_width.'" href="'.$atts['link'].'">'.do_shortcode($content).'</a>';
-<<<<<<< 2db4346d677cd58e67000fec313b61777284bdc2
-=======
-   return '<a class="lbdesign_button ' . $atts['type'] . ' ' . $atts['color'] . ' ' . $atts['size'] . ' ' . $atts['custom_class'] . $full_width . '" href="'.$atts['link'].'">' . do_shortcode($content) . '</a>';
->>>>>>> Changed button classes to prevent conflicts with other themes, plugins etc. Changed labels of popup 'add button' window. Added custom button class and full width option to insert window
-=======
->>>>>>> updated classes so 20 of the same classes don't get inserted into the button
 }
 add_shortcode('button', 'lbdesign_button');
 
