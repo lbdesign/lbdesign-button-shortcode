@@ -12,7 +12,7 @@
             ed.addButton('buttonshortcode', {
                 title : 'Insert button shortcode',
                 cmd : 'buttonshortcode',
-                image : '/wp-content/plugins/lbdesign-button-shortcode/img/icon-grey.png'
+                image : '../../wp-content/plugins/lbdesign-button-shortcode/img/icon-grey.png'
             });
             ed.addCommand('buttonshortcode', function() {
                 ed.windowManager.open({
