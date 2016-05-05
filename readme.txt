@@ -2,7 +2,7 @@
 Contributors: lepittenger
 Tags: shortcode
 Requires at least: 3.0.1
-Tested up to: 4.4.1
+Tested up to: 4.5
 Stable tag: 1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -13,19 +13,22 @@ A simple plugin for adding call-to-action buttons to post & page content via a s
 
 This simple plugin allows you to add call-to-action buttons to post and page content via a shortcode.
 
-Five button types/colors included:
+= Five button types/colors included: =
+
 * Default
 * Primary
 * Action
 * Info
 * Warning
 
-Three button sizes:
+= Three button sizes: =
+
 * Default (medium)
 * Small
 * Large
 
-Four styles:
+= Four styles: =
+
 * Default
 * Rounded
 * Pill
