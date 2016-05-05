@@ -60,6 +60,10 @@ This simple plugin allows you to add call-to-action buttons to post and page con
 
 == Upgrade Notice ==
 
+= 1.2 =
+
+* Fixes path to icon image 
+
 = 1.1 =
 
 * Button shortcode syntax changes from [button] to [lbdesign_button] to prevent conflicts.
