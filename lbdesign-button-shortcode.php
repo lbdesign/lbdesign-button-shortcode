@@ -72,3 +72,20 @@ function lbdesign_register_buttons( $buttons ) {
     return $buttons;
 
 }
+
+/**
+ * Localize Script
+ */
+function lbdbs_admin_head() {
+  $plugin_url = plugins_url( '/', __FILE__ );
+  ?>
+  <!-- TinyMCE Shortcode Plugin -->
+  <script type='text/javascript'>
+  var lbdbs_plugin = {
+      'url': '<?php echo $plugin_url; ?>',
+  };
+  </script>
+  <!-- TinyMCE Shortcode Plugin -->
+  <?php
+}
+add_action( "admin_head", 'lbdbs_admin_head' );
