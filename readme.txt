@@ -2,8 +2,8 @@
 Contributors: lepittenger
 Tags: shortcode
 Requires at least: 3.0.1
-Tested up to: 4.7.3
-Stable tag: 1.2
+Tested up to: 4.8
+Stable tag: 1.2.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -46,6 +46,14 @@ This simple plugin allows you to add call-to-action buttons to post and page con
 
 == Changelog ==
 
+= 1.2.1 =
+
+* Reordered the shortcode attributes to match the order in the TinyMCE pop-up
+
+= 1.2 =
+
+* Bugfixes
+
 = 1.1 =
 
 * Fixed undefined variable error when not using a full width button
@@ -62,7 +70,7 @@ This simple plugin allows you to add call-to-action buttons to post and page con
 
 = 1.2 =
 
-* Fixes path to icon image 
+* Fixes path to icon image
 
 = 1.1 =
 

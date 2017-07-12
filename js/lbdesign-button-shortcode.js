@@ -56,7 +56,7 @@
                     ],
                     onsubmit: function(e) {
                         ed.focus();
-                        ed.selection.setContent('[lbdesign_button link="' + e.data.link +'" type="' + e.data.type + '" custom_class="' + e.data.custom_class + '" size="' + e.data.size + '" style="'+e.data.styles+'"]' + e.data.content + '[/lbdesign_button]');
+                        ed.selection.setContent('[lbdesign_button link="' + e.data.link + '" type="' + e.data.type + '" size="' + e.data.size + '" style="' + e.data.styles + '" custom_class="' + e.data.custom_class + '"]' + e.data.content + '[/lbdesign_button]');
                     }
                 });
             });
@@ -87,7 +87,7 @@
                 longname : 'LBDesign Button Shortcode',
                 author : 'Lauren Pittenger @ LBDesign',
                 authorurl : 'http://lbdesign.tv',
-                version : "1.2"
+                version : "1.2.1"
             };
         }
     });
