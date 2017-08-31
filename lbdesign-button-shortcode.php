@@ -5,7 +5,7 @@
 * Author: Lauren Pittenger @ LBDesign
 * Author URI: http://laurenpittenger.com
 * License: GPL
-* Version: 1.2.1
+* Version: 1.3
 */
 
 /* our main shortcode function */

@@ -49,6 +49,10 @@ This simple plugin allows you to add call-to-action buttons to post and page con
 
 == Changelog ==
 
+= 1.3 =
+
+* Added option for buttons to open in a new tab
+
 = 1.2.1 =
 
 * Reordered the shortcode attributes to match the order in the TinyMCE pop-up
