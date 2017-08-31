@@ -13,8 +13,11 @@ function lbdesign_button_shortcode( $atts, $content = null ) {
 
     $classes[] = '';
 
+    $target = '';
+
     $atts = shortcode_atts(array(
     	'link'  => null,
+      'new_tab' => false,
     	'type'  => 'default',
         'color' => 'default',
     	'size'  => 'default',
@@ -24,17 +27,21 @@ function lbdesign_button_shortcode( $atts, $content = null ) {
 
     foreach ( $atts as $key => $att ) {
 
-        if( $key !== 'link' && $key !== 'custom_class' && $att !== null && $att !== '' && $att !== 'default' ) {
-            $classes[] = 'lbdesign_' . esc_attr( $att );
+        if( $key !== 'link' && $key !== 'new_tab' && $key !== 'custom_class' && $att !== null && $att !== '' && $att !== 'default' ) {
+            $classes[] = 'lbdesign_' . strtolower( esc_attr( $att ) );
         }
 
         if( $key == 'custom_class' ) {
             $classes[] = esc_attr( $att );
         }
 
+        if( $key == 'new_tab' && false !== $att && "false" !== $att ) {
+            $target = 'target="_blank"';
+        }
+
     }
 
-   return '<a class="lbdesign_button ' . implode( $classes, " " ) . '" href="' . esc_url( $atts['link'] ) . '">' . do_shortcode( $content ) . '</a>';
+   return '<a class="lbdesign_button ' . implode( $classes, " " ) . '" href="' . esc_url( $atts['link'] ) . '" ' . $target . '>' . do_shortcode( $content ) . '</a>';
 
 }
 add_shortcode( 'lbdesign_button', 'lbdesign_button_shortcode' );

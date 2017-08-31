@@ -19,6 +19,7 @@
                     title : 'Insert a Button',
                     body: [
                         {type: 'textbox', name: 'link', label: 'Link'},
+                        {type: 'checkbox', name: 'new_tab', label: 'Open link in a new tab'},
                         {type: 'textbox', name: 'content', label: 'Button Text' },
                         {type: 'listbox',
                             name: 'type',
@@ -56,7 +57,10 @@
                     ],
                     onsubmit: function(e) {
                         ed.focus();
-                        ed.selection.setContent('[lbdesign_button link="' + e.data.link + '" type="' + e.data.type + '" size="' + e.data.size + '" style="' + e.data.styles + '" custom_class="' + e.data.custom_class + '"]' + e.data.content + '[/lbdesign_button]');
+
+                        // build shortcode that gets inserted into the content when 'ok' is pressed on the modal
+                        // [lbdesign_button link="" new_tab="" type="" size="" style="" custom_class=""][/lbdesign_button]
+                        ed.selection.setContent('[lbdesign_button link="' + e.data.link + '" new_tab="' + e.data.new_tab + '" type="' + e.data.type + '" size="' + e.data.size + '" style="' + e.data.styles + '" custom_class="' + e.data.custom_class + '"]' + e.data.content + '[/lbdesign_button]');
                     }
                 });
             });

@@ -34,6 +34,9 @@ This simple plugin allows you to add call-to-action buttons to post and page con
 * Pill
 * Block
 
+= Shortcode formatting: =
+[lbdesign_button link="" type="" size="" style="" custom_class=""]Button text[/lbdesign_button]
+
 == Installation ==
 
 1. Upload `lbdesign-button-shortcode` to the `/wp-content/plugins/` directory
