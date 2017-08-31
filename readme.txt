@@ -35,7 +35,7 @@ This simple plugin allows you to add call-to-action buttons to post and page con
 * Block
 
 = Shortcode formatting: =
-[lbdesign_button link="" type="" size="" style="" custom_class=""]Button text[/lbdesign_button]
+[lbdesign_button link="" new_tab="" type="" size="" style="" custom_class=""]Button text[/lbdesign_button]
 
 == Installation ==
 
