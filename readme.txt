@@ -49,6 +49,10 @@ This simple plugin allows you to add call-to-action buttons to post and page con
 
 == Changelog ==
 
+= 1.3.1 =
+
+* Added tags to readme.txt file
+
 = 1.3 =
 
 * Added option for buttons to open in a new tab
