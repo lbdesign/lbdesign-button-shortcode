@@ -1,6 +1,6 @@
 === LBDesign Button Shortcode ===
 Contributors: lepittenger
-Tags: shortcode, wordpress button plugin, wordpress buttons, button generator, button, buttons
+Tags: shortcode, wordpress button plugin, wordpress buttons, button generator, button, buttons, simple buttons, button shortcode
 Requires at least: 3.0.1
 Tested up to: 4.8.2
 Stable tag: 1.3.1
