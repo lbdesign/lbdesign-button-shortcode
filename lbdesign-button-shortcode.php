@@ -5,7 +5,7 @@
 * Author: Lauren Pittenger @ LBDesign
 * Author URI: http://laurenpittenger.com
 * License: GPL
-* Version: 1.3.1
+* Version: 1.3.2
 */
 
 /* our main shortcode function */
@@ -59,8 +59,10 @@ add_action( 'wp_enqueue_scripts', 'lbdesign_button_styles' );
 
 function lbdesign_tinymce_buttons() {
 
-    add_filter( 'mce_external_plugins', 'lbdesign_add_buttons' ); // hooks plugin to TinyMCE
-    add_filter( 'mce_buttons', 'lbdesign_register_buttons' ); // used to show which buttons to show on TinyMCE
+    if ( is_admin() && current_user_can( 'edit_posts' ) && current_user_can( 'edit_pages' ) ) {
+      add_filter( 'mce_external_plugins', 'lbdesign_add_buttons' ); // hooks plugin to TinyMCE
+      add_filter( 'mce_buttons', 'lbdesign_register_buttons' ); // used to show which buttons to show on TinyMCE
+    }
 
 }
 add_action( 'init', 'lbdesign_tinymce_buttons' );

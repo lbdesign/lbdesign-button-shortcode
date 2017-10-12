@@ -91,7 +91,7 @@
                 longname : 'LBDesign Button Shortcode',
                 author : 'Lauren Pittenger @ LBDesign',
                 authorurl : 'http://lbdesign.tv',
-                version : "1.3.1"
+                version : "1.3.2"
             };
         }
     });
