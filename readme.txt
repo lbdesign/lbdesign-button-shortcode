@@ -2,7 +2,7 @@
 Contributors: lepittenger
 Tags: shortcode, wordpress button plugin, wordpress buttons, button generator, button, buttons, simple buttons, button shortcode
 Requires at least: 3.0.1
-Tested up to: 4.8.2
+Tested up to: 4.9
 Stable tag: 1.3.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -51,7 +51,7 @@ This simple plugin allows you to add call-to-action buttons to post and page con
 
 = 1.3.2 =
 
-* Adds a check so TinyMCE button only loads in admin 
+* Adds a check so TinyMCE button only loads in admin
 
 = 1.3.1 =
 
