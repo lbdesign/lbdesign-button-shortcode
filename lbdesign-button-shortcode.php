@@ -41,7 +41,7 @@ function lbdesign_button_shortcode( $atts, $content = null ) {
 
     }
 
-   return '<a class="lbdesign_button ' . implode( $classes, " " ) . '" href="' . esc_url( $atts['link'] ) . '" ' . $target . '>' . do_shortcode( $content ) . '</a>';
+   return '<a class="lbdesign_button ' . implode( " ", $classes ) . '" href="' . esc_url( $atts['link'] ) . '" ' . $target . '>' . do_shortcode( $content ) . '</a>';
 
 }
 add_shortcode( 'lbdesign_button', 'lbdesign_button_shortcode' );
