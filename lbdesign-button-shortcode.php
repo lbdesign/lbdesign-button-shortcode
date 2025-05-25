@@ -5,7 +5,7 @@
 * Author: Lauren Pittenger @ LBDesign
 * Author URI: http://laurenpittenger.com
 * License: GPL
-* Version: 1.4.0
+* Version: 1.5.0
 */
 
 /* our main shortcode function */
@@ -41,7 +41,8 @@ function lbdesign_button_shortcode( $atts, $content = null ) {
 
     }
 
-   return '<a class="lbdesign_button ' . implode( " ", $classes ) . '" href="' . esc_url( $atts['link'] ) . '" ' . $target . '>' . do_shortcode( $content ) . '</a>';
+    $classes = is_array($classes) ? $classes : array($classes);
+    return '<a class="lbdesign_button ' . implode( " ", $classes ) . '" href="' . esc_url( $atts['link'] ) . '" ' . $target . '>' . do_shortcode( $content ) . '</a>';
 
 }
 add_shortcode( 'lbdesign_button', 'lbdesign_button_shortcode' );
